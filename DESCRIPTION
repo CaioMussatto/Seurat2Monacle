@@ -1,0 +1,10 @@
+Package: seurat2monacle
+Type: Package
+Title: Seurat to Monacle
+Version: 0.1.0
+Author: Caio Mussatto
+Maintainer: caio.mussatto@unesp.br
+Description: This package helps to convert a Seurat object (rds file) to a Cell data set (cds file)
+License: AGPL (>= 3)
+Encoding: UTF-8
+LazyData: true
