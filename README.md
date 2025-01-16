@@ -17,13 +17,16 @@ To ensure that all required packages are installed, use the following code to in
 install.packages("remotes") 
 remotes::install_github("cole-trapnell-lab/monocle3") 
 remotes::install_github("satijalab/seurat-wrappers") 
-# Install the Seurat2Monacle package: Once the dependencies are installed, you can install your Seurat2Monacle package using devtools:
-devtools::install_github("CaioMussatto/seurat2monacle")
 ```
 
 2.  **Install the `Seurat2Monacle` package**:
 
 Once the dependencies are installed, you can install your `Seurat2Monacle` package using `devtools`:
+
+``` r
+# Install the Seurat2Monacle package: Once the dependencies are installed, you can install your Seurat2Monacle package using devtools:
+devtools::install_github("CaioMussatto/seurat2monacle")
+```
 
 ------------------------------------------------------------------------
 
