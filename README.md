@@ -6,18 +6,22 @@
 
 ## Installation
 
-### Install the package from GitHub
-
 1.  **Install the necessary dependencies**:
 
-To ensure that all required packages are installed, use the following code to install dependencies before installing the package:
+    1.  **Install the monocle3 package (Retrieved from the monacle3 [website](https://cole-trapnell-lab.github.io/monocle3/docs/installation/))**
 
-``` r
-# Install GitHub packages for monocle3 and SeuratWrappers 
-install.packages("remotes") 
-remotes::install_github("cole-trapnell-lab/monocle3") 
-remotes::install_github("satijalab/seurat-wrappers") 
-```
+        ``` r
+        if (!requireNamespace("BiocManager", quietly = TRUE))
+        install.packages("BiocManager")
+
+        BiocManager::install(c('BiocGenerics', 'DelayedArray', 'DelayedMatrixStats', 'limma', 'lme4', 'S4Vectors', 'SingleCellExperiment','SummarizedExperiment', 'batchelor', 'HDF5Array','terra', 'ggrastr'))
+
+        install.packages("devtools")
+
+        devtools::install_github('cole-trapnell-lab/monocle3')
+        ```
+
+    2.  **Install the SeuratWrappers package (Retrieved from the SeuratWrappers** [github repository](https://github.com/satijalab/seurat-wrappers)**)**
 
 2.  **Install the `Seurat2Monacle` package**:
 
