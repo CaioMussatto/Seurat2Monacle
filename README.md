@@ -1,9 +1,3 @@
----
-editor_options:
-  markdown:
-    wrap: 72
----
-
 # Seurat2Monacle
 
 **Seurat2Monacle**: Convert Seurat Object to Monocle CDS Seurat2Monacle
