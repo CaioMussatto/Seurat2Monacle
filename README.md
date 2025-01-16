@@ -23,6 +23,10 @@
 
     2.  **Install the SeuratWrappers package (Retrieved from the SeuratWrappers** [github repository](https://github.com/satijalab/seurat-wrappers)**)**
 
+        ``` r
+        devtools::install_github('satijalab/seurat-wrappers')
+        ```
+
 2.  **Install the `Seurat2Monacle` package**:
 
 Once the dependencies are installed, you can install your `Seurat2Monacle` package using `devtools`:
