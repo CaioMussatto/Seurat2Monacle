@@ -3,6 +3,13 @@ monocle_seurat <- function(object, umap_color = NULL){
   library(Seurat)
   library(dplyr)
   library(SeuratWrappers)
+  if ("Assay5" %in% class(object[["RNA"]])) {
+    warning("Converting Assay5 to Assay (Seurat V3).")
+    object[["RNA"]] <- SeuratObject::ConvertAssay5ToAssay(object[["RNA"]])
+  }
+
+  object[["RNA"]] <- as(object = object[["RNA"]], Class = "Assay")
+
   gene_annotation <- as.data.frame(rownames(object@reductions[["pca"]]@feature.loadings),
                                    row.names = rownames(object@reductions[["pca"]]@feature.loadings))
 
