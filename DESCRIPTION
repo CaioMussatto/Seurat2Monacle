@@ -3,8 +3,17 @@ Type: Package
 Title: Seurat to Monacle
 Version: 0.1.0
 Author: Caio Mussatto
-Maintainer: caio.mussatto@unesp.br
+Authors@R: person("Caio", "Mussatto", email = "caio.mussatto@unesp.br",
+  role = c("aut", "cre"))
 Description: This package helps to convert a Seurat object (rds file) to a Cell data set (cds file)
 License: AGPL (>= 3)
 Encoding: UTF-8
 LazyData: true
+RoxygenNote: 7.3.2
+Imports:
+    SeuratObject,
+    Seurat,
+    monocle3,
+    dplyr,
+    SeuratWrappers,
+    Matrix  
