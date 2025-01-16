@@ -89,11 +89,18 @@ seurat2monacle <- function(object, umap_color = NULL) {
   cds_from_seurat <- monocle3::cluster_cells(cds_from_seurat, resolution = 1e-5)
 
 
-  print(monocle3::plot_cells(cds_from_seurat,
-                             color_cells_by = umap_color,
-                             label_groups_by_cluster = TRUE,
-                             label_branch_points = TRUE,
-                             graph_label_size = 4))
+  if (is.null(umap_color)) {
+  print(plot_cells(cds_from_seurat,
+                   label_groups_by_cluster = TRUE,
+                   label_branch_points = TRUE,
+                   graph_label_size = 4))
+} else {
+  print(plot_cells(cds_from_seurat,
+                   color_cells_by = umap_color,
+                   label_groups_by_cluster = TRUE,
+                   label_branch_points = TRUE,
+                   graph_label_size = 4))
+}
 
   return(cds_from_seurat)
 }
