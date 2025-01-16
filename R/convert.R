@@ -50,7 +50,8 @@ seurat2monacle <- function(object, umap_color = NULL) {
 
   if ("Assay5" %in% class(object[["RNA"]])) {
     message("Converting Assay5 to Assay (Seurat V3).")
-    object[["RNA"]] <- SeuratObject::ConvertAssay5ToAssay(object[["RNA"]])
+    object[["RNA"]] <- as(object = object[["RNA"]], Class = "Assay")
+
   }
 
   object[["RNA"]] <- as(object = object[["RNA"]], Class = "Assay")
