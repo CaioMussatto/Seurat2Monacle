@@ -1,6 +1,6 @@
 # Seurat2Monacle
 
-**Seurat2Monacle**: Convert Seurat Object to Monocle CDS Seurat2Monacle is an R package that facilitates converting Seurat objects to the Monocle CellDataSet (CDS) format for single-cell analysis, including preprocessing, clustering, and UMAP visualization. The main function of the package, seurat2monacle(), allows you to transform a Seurat object (compatible with Seurat v3 and v5) into a CellDataSet from Monocle3.
+**Seurat2Monacle**: Convert Seurat Object to Monocle CDS Seurat2Monacle is an R package that facilitates converting Seurat objects to the Monocle CellDataSet (CDS) format for single-cell analysis, including preprocessing, clustering, and UMAP visualization. The main function of the package, ```seurat2monacle()```, allows you to transform a Seurat object (compatible with Seurat v3 and v5) into a CellDataSet from Monocle3.
 
 ------------------------------------------------------------------------
 
